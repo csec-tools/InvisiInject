@@ -1,7 +1,25 @@
 # InvisiInject has no external dependencies.
-# Works with Python 3.8 and up.
+# Works with Python 3.8+
 
 # Standard Library Modules Used:
 # - argparse
 # - base64
 # - urllib.parse
+
+# 🔐 Encoding Examples:
+# Encode payload using base64
+# Command:
+# python main.py -p "UNION SELECT * FROM users" --method base64
+
+# Chain multiple encoders: URL + Hex
+# Command:
+# python main.py -p "SELECT * FROM users" --chain url,hex
+
+# 🔓 Decoding Examples:
+# Decode base64 string
+# Command:
+# python main.py -p "VVNFIENPTlRFTlQgRlJPTSBVU0VSUw==" --method base64 --decode
+
+# Decode URL-encoded payload
+# Command:
+# python main.py -p "SELECT%20*%20FROM%20users" --method url --decode
