@@ -1,0 +1,7 @@
+# InvisiInject has no external dependencies.
+# Works with Python 3.8 and up.
+
+# Standard Library Modules Used:
+# - argparse
+# - base64
+# - urllib.parse
